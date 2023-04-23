@@ -10,5 +10,14 @@ def hello_world():
 def default():
     return "<p>Hello, Default!</p>"
 
+class Item:
+    def __init__(self, name, img_link, price):
+        self.name = name
+        self.img_link = img_link
+        self.price = price
+
+Item1 = Item("Pringles", "https://pics.walgreens.com/prodimg/595138/450.jpg", "price")
+
+
 if __name__ == "__main__":
     app.run(debug=True)
