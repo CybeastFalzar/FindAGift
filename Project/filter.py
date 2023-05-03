@@ -2,11 +2,12 @@ import pandas as pd
 from statistics import median
 import json
 
-with open('pringles.json') as f:
-    data = json.load(f) 
 
 
-def filter_data(data):
+def filter_data(file_name):
+    with open(file_name) as f:
+        data = json.load(f) 
+
     result = {}
     num_dict = {}
     num_list = []
@@ -32,4 +33,5 @@ def filter_data(data):
     result["buy_link"] = median_offer_dict.get("link")
     result["img_link"] = data['items'][0]['images'][num_dict.get(offer_median)]
     print(result)
-filter_data(data)
+    
+filter_data("pringles.json")
