@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route("/home")
 def hello_world():
     return "<p>Hello, Home!</p>"
-
+    
 @app.route("/")
 def default():
     return "<p>Hello, Default!</p>"
@@ -16,7 +16,7 @@ class Item:
         self.img_link = img_link
         self.price = price
 
-Item1 = Item("Pringles", "https://pics.walgreens.com/prodimg/595138/450.jpg", "price")
+Item1 = Item("Pringles", "https://pics.walgreens.com/prodimg/595138/450.jpg", "$10.50")
 
 
 if __name__ == "__main__":
