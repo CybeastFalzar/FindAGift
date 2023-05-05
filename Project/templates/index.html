@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Find Gift{% endblock %}
+{% block content %}
+    <h1>Find Gift Form</h1>
+    <form action="#" method="post">
+        <p>Age:  <input type="text" name="age" required/></p>
+        <label for="form">Choose an Interest:</label>
+        <select id="form" name="interest" required>
+        <option value="pringles">Pringles</option>
+        <option value="movies">Movies</option>
+        </select>
+        <p>Budget:  <input type="number" name="budget" required/></p>
+        <p>Number of Gifts:  <input type="number" name="budget" required/></p>
+        <p><input type="submit" name="submit"/></p>
+    </form>
+{% endblock %}
