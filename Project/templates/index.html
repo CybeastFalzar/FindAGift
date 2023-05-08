@@ -10,8 +10,32 @@
         <option value="pringles">Pringles</option>
         <option value="movies">Movies</option>
         </select>
-        <p>Budget:  <input type="number" name="budget" required/></p>
-        <p>Number of Gifts:  <input type="number" name="budget" required/></p>
+        <br>
+        <br>
+        <!-- <p>Budget:  <input type="number" name="budget" required/></p> -->
+        <!-- <p>Number of Gifts:  <input type="number" name="num_of_gifts" required/></p> -->
+        
+      <label for="num_of_gifts">Number of Gifts:</label>
+      <input name = "num_of_gifts" id="basic" type="text" data-slider-min="0" data-slider-max="5" data-slider-step="1" data-slider-value="5"/></p>
+      <br>
+      <label for="budget">Budget: </label>
+      <input id="range" type="text" name="budget"/>    
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/bootstrap-slider.min.js"></script>
+          <script>
+            // Basic Slider
+            var slider = new Slider("#basic", {
+              tooltip: 'show'
+            });
+            var slider = new Slider("#range", {
+                min: 0,
+                max: 100,
+                value: [50, 80],
+                range: true,
+                tooltip: 'show'
+            });
+            
+          </script>
         <p><input type="submit" name="submit"/></p>
     </form>
 {% endblock %}

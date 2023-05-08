@@ -2,12 +2,12 @@
 {% block title %}Home Page{% endblock %}
 {% block content %}
 <h1>Results</h1>
-        {% for result in content %}
-            <p>{{result.get("seller")}}</p>
-            <p>{{result.get("name")}}</p>
-            <p>{{result.get("price")}}</p>
-            <a href="{{result.get("buy_link")}}" target="_blank">
-                <img src = "{{result.get("img_link")}}" width=10% length = 100px>
+        {% for result in content[0] %}
+            <p>{{result.seller}}</p>
+            <p>{{result.name}}</p>
+            <p>{{result.price}}</p>
+            <a href="{{result.buy_link}}" target="_blank">
+                <img src = "{{result.img_link}}" alt="pringles" width=10% length = 100px>
             </a>
             <br>
             

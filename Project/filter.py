@@ -32,6 +32,7 @@ def filter_data(file_name):
     result["price"] = median_offer_dict.get("price")
     result["buy_link"] = median_offer_dict.get("link")
     result["img_link"] = data['items'][0]['images'][num_dict.get(offer_median)]
+
     return result
     
 filter_data("pringles.json")
