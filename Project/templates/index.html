@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-
 {% block title %}Find Gift{% endblock %}
 {% block content %}
     <h1>Find Gift Form</h1>
@@ -7,7 +6,7 @@
         <p>Age:  <input type="text" name="age" required/></p>
         <label for="form">Choose an Interest:</label>
         <select id="form" name="interest" required>
-        <option value="pringles">Pringles</option>
+        <option value="Snack">Snack</option>
         <option value="movies">Movies</option>
         </select>
         <br>
@@ -16,26 +15,39 @@
         <!-- <p>Number of Gifts:  <input type="number" name="num_of_gifts" required/></p> -->
         
       <label for="num_of_gifts">Number of Gifts:</label>
-      <input name = "num_of_gifts" id="basic" type="text" data-slider-min="0" data-slider-max="5" data-slider-step="1" data-slider-value="5"/></p>
+      <input name = "num_of_gifts" id="basic" type="text" data-slider-min="1" data-slider-max="5" data-slider-step="1" data-slider-value="5"/></p>
       <br>
       <label for="budget">Budget: </label>
       <input id="range" type="text" name="budget"/>    
       
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/bootstrap-slider.min.js"></script>
+      
           <script>
             // Basic Slider
             var slider = new Slider("#basic", {
               tooltip: 'show'
             });
             var slider = new Slider("#range", {
-                min: 0,
+                min: 1,
                 max: 100,
-                value: [50, 80],
+                value: [1, 10],
                 range: true,
                 tooltip: 'show'
             });
-            
           </script>
-        <p><input type="submit" name="submit"/></p>
+      <p><input type="submit" name="submit-gift" value="Find Gifts"/></p>
+    </form>
+    <br>
+    <form action="#" method="post">
+      <h1>Random Gift</h1>
+
+      <label for="num_of_gifts_rand">Number of Gifts:</label>
+      <input name = "num_of_gifts_rand" id="basic-rand" type="text" data-slider-min="1" data-slider-max="5" data-slider-step="1" data-slider-value="2"/></p>
+      <script>
+        var slider_rand = new Slider("#basic-rand", {
+        tooltip: 'show'
+        });
+      </script>
+      <label for="submit">Find Gift:</label>
+      <p><input type="submit" name="submit-random" value="Click Here"/></p>
     </form>
 {% endblock %}

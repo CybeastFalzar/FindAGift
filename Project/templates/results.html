@@ -2,7 +2,7 @@
 {% block title %}Home Page{% endblock %}
 {% block content %}
 <h1>Results</h1>
-        {% for result in content[0] %}
+        {% for result in content %}
             <p>{{result.seller}}</p>
             <p>{{result.name}}</p>
             <p>{{result.price}}</p>
