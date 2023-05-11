@@ -7,6 +7,7 @@ import random
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///gift.sqlite3'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['SEND_FILE_MAX_AGE_DEFAULT'] = -1
 
 db = SQLAlchemy(app)
 
@@ -62,11 +63,8 @@ def find():
             if (chosen_number_gifts >= len(temp_result)+1):
                 chosen_number_gifts = len(temp_result)
             rand_gift = random.sample(range(1, len(temp_result)+1), chosen_number_gifts)
-            print(rand_gift)
             for id in rand_gift:
                 result_item.append(temp_result[id-1])
-
-
             return redirect(url_for("result"))
         
         elif 'submit-random' in request.form:

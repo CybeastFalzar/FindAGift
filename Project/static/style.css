@@ -1,0 +1,100 @@
+h1.title {
+	color: orangered;
+	text-align: center;
+	font-size: 48px;
+	font-weight: bolder;
+	
+}
+
+/* div.gift-form {
+	flex: 0;
+}
+
+div.random-form {
+	flex: 1;
+} */
+
+* {
+	
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	scroll-behavior: smooth;
+  }
+
+.webpage-forms {
+	border: 1px solid black;
+	margin: 1rem;
+	padding: 2rem 2rem;
+	text-align: center;
+	display: flex;
+	width: auto;
+	height: 100%;
+  }
+
+  .webpage-forms h1 {
+	color: orangered;
+	font-style: normal;
+	font-size: 32px;
+	font-weight: bold;
+  }
+
+.gift-form {
+	flex: 1 1 auto;
+	/* display: inline-block; */
+	/* border: 1px solid red; */
+	padding: 1rem 1rem;
+	/* vertical-align: middle; */
+}
+
+.gift-form-rand {
+	flex: 1 1 auto;
+	/* display: inline-block; */
+	/* border: 1px solid red; */
+	padding: 1rem 1rem;
+	/* vertical-align: middle; */
+}
+
+input[type=text],
+select,
+textarea {
+  width: 10%;
+  padding: 12px;
+  border: 1px solid rgb(70, 68, 68);
+  border-radius: 4px;
+  
+}
+
+label {
+	padding: 12px 12px 12px 0;
+	display: inline-block;
+	color: #F24726;
+	font-size: 18px;
+	
+  }
+
+  input[type=submit] {
+	background-color: orangered;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	/* float: right; */
+  }
+  
+  input[type=submit]:hover {
+	background-color: grey;
+  }
+
+
+#ex1Slider .slider-selection {
+	background: darkorange;
+}
+
+#ex1Slider .slider-handle {
+	background: #F24726;
+}
+
+

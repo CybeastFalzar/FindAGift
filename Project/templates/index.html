@@ -1,53 +1,75 @@
 {% extends "base.html" %}
+
+{% block head %}
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static', filename='style.css') }}">
+{% endblock %}
+
 {% block title %}Find Gift{% endblock %}
 {% block content %}
-    <h1>Find Gift Form</h1>
-    <form action="#" method="post">
-        <p>Age:  <input type="text" name="age" required/></p>
-        <label for="form">Choose an Interest:</label>
-        <select id="form" name="interest" required>
-        <option value="Snack">Snack</option>
-        <option value="movies">Movies</option>
-        </select>
-        <br>
-        <br>
-        <!-- <p>Budget:  <input type="number" name="budget" required/></p> -->
-        <!-- <p>Number of Gifts:  <input type="number" name="num_of_gifts" required/></p> -->
-        
-      <label for="num_of_gifts">Number of Gifts:</label>
-      <input name = "num_of_gifts" id="basic" type="text" data-slider-min="1" data-slider-max="5" data-slider-step="1" data-slider-value="5"/></p>
-      <br>
-      <label for="budget">Budget: </label>
-      <input id="range" type="text" name="budget"/>    
-      
-      
-          <script>
-            // Basic Slider
-            var slider = new Slider("#basic", {
-              tooltip: 'show'
-            });
-            var slider = new Slider("#range", {
-                min: 1,
-                max: 100,
-                value: [1, 10],
-                range: true,
+    <h1 class="title">Find-A-Gift</h1>
+
+    <div class="webpage-forms">
+      <div class="gift-form">
+        <h1>Gift Reccomend</h1>
+        <form action="#" method="post">
+            <label for="age">Age: </label>
+            <input type="text" name="age" required/>
+            <br>
+            <label for="form">Choose an Interest:</label>
+              <div class="interest-menu">
+                <select id="form" name="interest" required>
+                  <option value="Snack">Snack</option>
+                  <option value="movies">Movies</option>
+                  <option value="Snack">Star Wars</option>
+                  <option value="movies">Basketball</option>
+                  <option value="Snack">Nickelodeon</option>
+                  <option value="movies">Graphic-Tees</option>
+                </select>
+              </div>
+            <br>
+            <br>
+            
+          <label for="num_of_gifts">Number of Gifts:</label>
+          <input name = "num_of_gifts" id="basic" type="text" data-slider-id='ex1Slider' data-slider-handle="round" data-slider-min="1" data-slider-max="5" data-slider-step="1" data-slider-value="5"/></p>
+          <br>
+          <label for="budget">Budget: </label>
+          <input id="range" data-slider-id='ex1Slider' data-slider-handle="round" type="text" name="budget"/>    
+            <script>
+              // Basic Slider
+              var slider = new Slider("#basic", {
                 tooltip: 'show'
+              });
+              var slider = new Slider("#range", {
+                  min: 1,
+                  max: 100,
+                  value: [1, 10],
+                  range: true,
+                  tooltip: 'show'
+              });
+            </script>
+            
+          <p><input type="submit" name="submit-gift" value="Find Gifts"/></p>
+        </form>
+        <br>
+      </div>
+
+      
+
+      <div class="gift-form-rand">
+        <form action="#" method="post">
+          <h1>Random Gift</h1>
+          <label for="num_of_gifts_rand">Number of Gifts:</label>
+          <input name = "num_of_gifts_rand" id="basic-rand" type="text" data-slider-id='ex1Slider' data-slider-handle="round" data-slider-min="1" data-slider-max="5" data-slider-step="1" data-slider-value="2"/></p>
+          <script>
+            var slider_rand = new Slider("#basic-rand", {
+            tooltip: 'show'
             });
           </script>
-      <p><input type="submit" name="submit-gift" value="Find Gifts"/></p>
-    </form>
-    <br>
-    <form action="#" method="post">
-      <h1>Random Gift</h1>
+            <label for="submit-random">Find Gift:</label>
+            <input type="submit" name="submit-random" value="Click Here"/>   
+        </form>
+      </div>
 
-      <label for="num_of_gifts_rand">Number of Gifts:</label>
-      <input name = "num_of_gifts_rand" id="basic-rand" type="text" data-slider-min="1" data-slider-max="5" data-slider-step="1" data-slider-value="2"/></p>
-      <script>
-        var slider_rand = new Slider("#basic-rand", {
-        tooltip: 'show'
-        });
-      </script>
-      <label for="submit">Find Gift:</label>
-      <p><input type="submit" name="submit-random" value="Click Here"/></p>
-    </form>
+    </div>
+
 {% endblock %}
