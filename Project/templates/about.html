@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block head %}
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static', filename='about.css') }}">
+{% endblock %}
+{% block title %}About Us{% endblock %}
+{% block content %}
+<!-- <div class="about-section">
+    <h1>About Us Page</h1>
+    <p>Some text about who we are and what we do.</p>
+    <p>Resize the browser window to see that this page is responsive by the way.</p>
+</div> -->
+    
+    <h2 style="text-align:center; font-weight: bold">Our Team</h2>
+    <div class="row">
+
+    <div class="column">
+        <div class="card">
+        <img src="{{ url_for('static', filename='videsh.png') }}" alt="Videsh Narine" style="width:35%; padding: 10px; ">
+        <div class="container">
+            <h2>Videsh Narine</h2>
+            <p class="title">Indie Game Developer and Basketball Fan</p>
+            <p>Professionally, I am taking a dive into the world of Data<br> Engineering and hope to build a career. In my recreational time I <br> like to express myself through game development from a programming <br> and narrative side.</p>
+            <p>VideshNWork@gmail.com</p>
+            <a href="https://www.linkedin.com/in/videsh-narine-774369190/" target="_blank"><p><button class="button">LinkedIn</button></p></a>
+        </div>
+        </div>
+    </div>
+    
+    <div class="column">
+        <div class="card">
+        <img src="{{ url_for('static', filename='philip.png') }}" alt="Philip Park" style="width:35%; padding: 10px;">
+        <div class="container">
+            <h2>Philip Park</h2>
+            <p class="title">Philosophy Ponderer & Soccer Fanatic </p>
+            <p>I am deeply interested in the nexus between Tech and Humanities.<br>
+                 My passions include entrepreneurship,sports and reading classics<br> such as Ethan Frome.<br><br></p>
+            <p>PhilipParkNYC@gmail.com</p>
+            <a href="https://www.linkedin.com/in/philip-park-1b69661bb/" target="_blank"><p><button class="button">LinkedIn</button></p></a>
+        </div>
+        </div>
+    </div>
+    
+
+    </div>
+
+
+{% endblock %}

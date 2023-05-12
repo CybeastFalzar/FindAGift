@@ -1,0 +1,46 @@
+/* ==========================================
+    FOR DEMO PURPOSE
+  ========================================== */
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+  
+  a:hover, a:focus {
+    text-decoration: none;
+  }
+  
+
+  
+  footer {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    margin-top: 10px;
+    background: rgb(39, 40, 41);
+    color: orangered;
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+    height: 4em;
+    bottom: 0;
+    position: fixed;
+    
+    /* bottom: 0;
+    width: 100%;
+
+    height: 7em;
+    background: grey; */
+  }
+  
+  
+  /* ==========================================
+      CUSTOM UTILS CLASSES
+    ========================================== */

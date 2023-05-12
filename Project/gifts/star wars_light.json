@@ -1,0 +1,42 @@
+{
+    "code": "OK",
+    "total": 1,
+    "offset": 0,
+    "items": [
+      {
+        "ean": "0082686082983",
+        "title": "Rubie s Star Wars Toy Halloween Costume Accessory",
+        "description": "Complete your Star Wars costume with this officially licensed toy Ahsoka Tano lightsaber. You don t need to be Jedi apprentice during the clone wars to get yourself a sweet weapon like this. The green blade and detailed handle has a look of authenticity  and you don t have to battle the likes of Asajj Ventress  General Grievous  or Cad Bane to appreciate it. Slash through Empire Forces and Join the Jedi with the power of Ashoka s Lightsaber. Its Collapsible design seals firmly with a locking half ring for safety. When the battle is on  undo the ring and unsheath by holding firmly and swinging toward the ground leaving a few feet of room. Power up glowing radiate Green energy with the flip of a switch with Long Lasting LED lights.",
+        "upc": "082686082983",
+        "brand": "Rubie s",
+        "model": "RU8298",
+        "color": "Dark Sea Green",
+        "size": "One Size",
+        "dimension": "",
+        "weight": "4.25 lbs",
+        "category": "Toys & Games > Toys > Toy Weapons & Gadgets",
+        "lowest_recorded_price": 2.99,
+        "highest_recorded_price": 38.67,
+        "images": [
+          "https://images.fun.com/products/9288/1-2/ahsoka-lightsaber-accessory.jpg"
+        ],
+        "offers": [
+          {
+            "merchant": "Fun.com",
+            "domain": "fun.com",
+            "title": "Ahsoka Lightsaber Toy",
+            "currency": "",
+            "list_price": "",
+            "price": 14.99,
+            "shipping": "",
+            "condition": "New",
+            "availability": "",
+            "link": "https://www.upcitemdb.com/norob/alink/?id=v2r2y2y2v233c454t2&tid=1&seq=1683905819&plt=9b62389f61bdf9aa4bb14ccad280ef5e",
+            "updated_t": 1683881954
+          }
+        ],
+        "asin": "B001DNK0HQ",
+        "elid": "163258102142"
+      }
+    ]
+  }

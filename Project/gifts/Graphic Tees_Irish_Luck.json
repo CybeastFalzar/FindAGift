@@ -1,0 +1,45 @@
+{
+    "code": "OK",
+    "total": 1,
+    "offset": 0,
+    "items": [
+      {
+        "ean": "0725835434263",
+        "title": "Delta Apparel Mens Not Only Single Graphic T-Shirt  Green  Large",
+        "description": "Delta Apparel Mens Not Only Single Graphic T-Shirt green L Delta Apparel A1000D-25286 T-Shirt Graphic Tee Honduras Mens Crew Neck Classic Fit 50% Cotton 50% Polyester Graphic Print All Seasons Medium Weight Short Sleeve Casual Novelty Additional Details: Fun graphic tee shirt Crew neck Short sleeves",
+        "upc": "725835434263",
+        "brand": "Delta Apparel",
+        "model": "5296273",
+        "color": "kelly htr irish",
+        "size": "Large",
+        "dimension": "",
+        "weight": "",
+        "category": "Apparel & Accessories > Clothing",
+        "currency": "",
+        "lowest_recorded_price": 2.99,
+        "highest_recorded_price": 16.99,
+        "images": [
+          "https://i5.walmartimages.com/asr/61f26c8f-e63d-4ad9-b7cb-b8e97a8758b5_1.0fc0e0960434c08a947be8aec026e663.jpeg?odnHeight=450&odnWidth=450&odnBg=ffffff",
+          "http://s7d9.scene7.com/is/image/JCPenney/DP0313201517015241M?wid=2000&hei=2000&op_sharpen=1",
+          "https://images10.newegg.com/ProductImageCompressAll200/A1A7_1_201709271635756345.jpg",
+          "https://tshop.r10s.com/736/a5e/29de/bf17/504e/6366/6f91/1193e787262c600c7376cd.jpg?_ex=512x512"
+        ],
+        "offers": [
+          {
+            "merchant": "Wal-Mart.com",
+            "domain": "walmart.com",
+            "title": "Delta Apparel Mens Not Only Single Graphic T-Shirt  Green  Large",
+            "currency": "",
+            "list_price": 19.99,
+            "price": 13.63,
+            "shipping": "Free Shipping",
+            "condition": "New",
+            "availability": "",
+            "link": "https://www.upcitemdb.com/norob/alink/?id=y2t263z20333f4c4t2&tid=1&seq=1683903411&plt=68e23d30a0149c471f6a6f24b91815c4",
+            "updated_t": 1675885033
+          }
+        ],
+        "asin": "B00XC1HG2Y"
+      }
+    ]
+  }

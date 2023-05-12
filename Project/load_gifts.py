@@ -1,5 +1,6 @@
 from app import db
-from filter import filter_data, filter_data_api
+from filter import filter_data, filter_data_api, get_category
+import os
 
 class gifts(db.Model):
     _id = db.Column("id", db.Integer, primary_key=True)
@@ -33,26 +34,30 @@ def init_db():
     db.drop_all()
     db.create_all()
 
-    # Snacks
-    snack_1_pringles = gifts(filter_data("pringles.json"), "Snack", 3)
-    snack_2_pringles = gifts(filter_data("pringles.json"), "Snack", 4)
-    snack_3_pringles = gifts(filter_data("pringles.json"), "Snack", 4)
-    snack_4_pringles = gifts(filter_data("sw.json"), "Star Wars", 4)
-    snack_5_pringles = gifts(filter_data("sw.json"), "Star Wars", 4)
-   
-    snack_6_pringles = gifts(filter_data("sw.json"), "Star Wars", 4)
-    # snack_3 = gifts(filter_data_api("https://api.upcitemdb.com/prod/trial/lookup?upc=082686005999"), "Star Wars", 4)
-   
-    # snack_4 = gifts(filter_data_api("https://api.upcitemdb.com/prod/trial/lookup?upc=082686005999"), "Star Wars", 4)
-    # snack_5 = gifts(filter_data_api("https://api.upcitemdb.com/prod/trial/lookup?upc=082686005999"), "Star Wars", 4)
-
-
-    db.session.add(snack_1_pringles)
-    db.session.add(snack_2_pringles)
-    db.session.add(snack_3_pringles)
-    db.session.add(snack_4_pringles)
-    db.session.add(snack_5_pringles)
-    db.session.add(snack_6_pringles)
+    directory = "gifts"
+    for filename in os.listdir(directory):
+        f = os.path.join(directory, filename)
+        if os.path.isfile(f):
+            age = 0
+            cond1 = get_category(str(filename)) == "nickelodeon"
+            cond2 = get_category(str(filename)) == "basketball"
+            cond3 = get_category(str(filename)) == "baseball"
+            cond4 = get_category(str(filename)) == "star wars"
+            cond5 = get_category(str(filename)) == "graphic tees"
+            if (cond1):
+                age = 3
+            elif cond2:
+                age = 4
+            elif cond3:
+                age = 4
+            elif cond4:
+                age = 2
+            elif cond5:
+                age = 4
+            else:
+                age = 4
+            new_entry = gifts(filter_data(f), get_category(str(filename)), age)
+            db.session.add(new_entry)
     db.session.commit()
 
 

@@ -1,0 +1,42 @@
+{
+    "code": "OK",
+    "total": 1,
+    "offset": 0,
+    "items": [
+      {
+        "ean": "0082686082990",
+        "title": "Halloween Clonetrooper Blaster",
+        "description": "If you re going as a Grand Army of the Republic clone trooper  your costume won t be complete without the Halloween Clone Trooper Blaster. This officially-licensed Halloween costume accessory is very similar to the ones used in the films and will look fantastic with a full clone trooper costume. The Halloween gun is made from plastic with bright orange accents. Due to seasonal volume  please review shipping/delivery date options closely.",
+        "upc": "082686082990",
+        "brand": "Star Wars",
+        "model": "RU8299",
+        "color": "Orange",
+        "size": "One Size",
+        "dimension": "2 X 2 X 12 inches",
+        "weight": "1 Pounds",
+        "category": "Apparel & Accessories > Costumes & Accessories > Costume Accessories",
+        "lowest_recorded_price": 6.56,
+        "highest_recorded_price": 71.14,
+        "images": [
+          "https://images.fun.com/products/9289/3-2/clone-trooper-blaster-toy-.jpg"
+        ],
+        "offers": [
+          {
+            "merchant": "Fun.com",
+            "domain": "fun.com",
+            "title": "Clone Trooper Blaster Toy ",
+            "currency": "",
+            "list_price": "",
+            "price": 29.99,
+            "shipping": "",
+            "condition": "New",
+            "availability": "",
+            "link": "https://www.upcitemdb.com/norob/alink/?id=w2w233y2x2y2f474t2&tid=1&seq=1683905976&plt=7ed80c01341b733769c64a4b94404e09",
+            "updated_t": 1683881950
+          }
+        ],
+        "asin": "B001VC4SAE",
+        "elid": "203658227836"
+      }
+    ]
+  }

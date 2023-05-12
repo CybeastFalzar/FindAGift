@@ -1,0 +1,42 @@
+{
+    "code": "OK",
+    "total": 1,
+    "offset": 0,
+    "items": [
+      {
+        "ean": "0096675626287",
+        "title": "SensorPEDIC MemoryLOFT Classic Cotton Standard Bed Pillow with Memory Foam Core, 2-Pack",
+        "description": "Enjoy the best of memory foam and fiber fill with the MemoryLOFT Classic Cotton Pillow from SensorPEDIC, featuring a ventilated, 1-inch thick insert of pressure-relieving memory foam surrounded by plush, SofLOFT fiber to provide excellent pressure-relieving support and comfort for all sleep styles.",
+        "upc": "096675626287",
+        "brand": "Sensorpedic",
+        "model": "62628",
+        "color": "Black",
+        "size": "",
+        "dimension": "26 X 20X 2 inches",
+        "weight": "0.0400lb",
+        "category": "Home & Garden > Linens & Bedding > Bedding > Pillows",
+        "lowest_recorded_price": 21.84,
+        "highest_recorded_price": 163.32,
+        "images": [
+          "https://i5.walmartimages.com/asr/d7220bef-bb07-445e-a451-7f4a0be4e694.816eecaae36834b5b17f1b0d1bcff6c6.jpeg?odnHeight=450&odnWidth=450&odnBg=ffffff",
+          "https://i5.walmartimages.com/asr/a92c3b5c-486a-4445-af5b-33f4f38adc53_1.32d00f630b1dd35caa1ed18a4cc6ed46.jpeg?odnHeight=450&odnWidth=450&odnBg=ffffff"        ],
+        "offers": [
+          {
+            "merchant": "Wal-Mart.com",
+            "domain": "walmart.com",
+            "title": "SensorPedic MemoryLoft Classic Pillow - Set of 2",
+            "currency": "",
+            "list_price": "",
+            "price": 47.65,
+            "shipping": "Free Shipping",
+            "condition": "New",
+            "availability": "Out of Stock",
+            "link": "https://www.upcitemdb.com/norob/alink/?id=y2r253x2v2339444t2&tid=1&seq=1683904385&plt=229fe0e053ab43d6c41d37004b75a643",
+            "updated_t": 1643738559
+          }
+        ],
+        "asin": "B002IVTEHO",
+        "elid": "275176444471"
+      }
+    ]
+  }

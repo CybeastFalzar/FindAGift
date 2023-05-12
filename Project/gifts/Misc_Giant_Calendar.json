@@ -1,0 +1,44 @@
+{
+    "code": "OK",
+    "total": 1,
+    "offset": 0,
+    "items": [
+        {
+            "ean": "0840853145578",
+            "title": "Giant Calendar - I YR",
+            "description": "Make sure the whole family knows which activities and events are coming up with this one-year large calendar from Walter Drake. At 14 1/4  W x 21 3/4  H  it s perfect for hanging on a wall or posting on the fridge. The large squares for each day provide plenty of room to write down the details for multiple appointments  meetings  sports practices  vacations and other events. Each month also displays the first two weeks of the next month at the bottom  ensuring that there are no big surprises when you flip to the next page. Use this calendar to stay on top of your family s busy schedule.",
+            "upc": "840853145578",
+            "brand": "Fox Valley Traders",
+            "model": "333868",
+            "color": "[White  Other]",
+            "size": "",
+            "dimension": "",
+            "weight": "",
+            "category": "Office Supplies > Filing & Organization > Calendars, Organizers & Planners",
+            "currency": "",
+            "lowest_recorded_price": 10.5,
+            "highest_recorded_price": 15.62,
+            "images": [
+                "https://i5.walmartimages.com/asr/891cf5f1-805a-49d4-b304-08123d30ad25_1.3f4caef2e82823c5794078e3a0ca10ef.jpeg?odnHeight=450&odnWidth=450&odnBg=ffffff",
+                "http://images.jet.com/md5/c9c9d2487a441ac6eae9a3d980f64266.500"
+            ],
+            "offers": [
+                {
+                    "merchant": "Wal-Mart.com",
+                    "domain": "walmart.com",
+                    "title": "Giant Calendar - I YR",
+                    "currency": "",
+                    "list_price": "",
+                    "price": 15.62,
+                    "shipping": "Free Shipping",
+                    "condition": "New",
+                    "availability": "Out of Stock",
+                    "link": "https://www.upcitemdb.com/norob/alink/?id=03o203z2v26394c4w2&tid=1&seq=1683856208&plt=4c54d0ada0f425997a371917e41d3bc2",
+                    "updated_t": 1680465328
+                }
+                
+            ],
+            "elid": "222894091024"
+        }
+    ]
+}

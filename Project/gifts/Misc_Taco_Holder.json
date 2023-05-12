@@ -1,0 +1,111 @@
+{
+  "code": "OK",
+  "total": 1,
+  "offset": 0,
+  "items": [
+    {
+      "ean": "0719318389416",
+      "title": "California Home Goods Stainless Taco Holders Stand  2-Pack  3 Tacos Each",
+      "description": "SERVING TACOS HAS NEVER BEEN THIS EASY! Level up your taco prep skills or upgrade your taco presentation with professional looking taco holders  designed to look as good as your tastes! Crafted with high-grade stainless steel  the stand-up holders are the perfect complement to any room  dish  or dining table. Our homegrown brand  California Home Goods  has always been on a mission to bring you dependable and wallet-friendly products that ll make your daily lives a lot easier and more fun. Exactly why we re proud to bring you our Stainless Steel Taco Holder Set! Forget the mess and stress of constantly finding ways how to assemble and serve your tacos without seeing the meat  veggies  and other fillings spillover. With our sturdy metal taco rack  you ll be all-smiles serving your version of this all-time favorite Mexican dish to your friends and family. Our sleek and durable taco serving rack will surely make your Taco Tuesdays  weekend picnics  pool parties  and even regular mealtimes are more fun! To provid",
+      "upc": "719318389416",
+      "brand": "California Home Goods",
+      "model": "CHG-TH-2P",
+      "color": "Navy",
+      "size": "",
+      "dimension": "",
+      "weight": "1.59lb",
+      "category": "Home & Garden > Kitchen & Dining > Kitchen Tools & Utensils",
+      "currency": "",
+      "lowest_recorded_price": 8.99,
+      "highest_recorded_price": 26.89,
+      "images": [
+        "https://slimages.macysassets.com/is/image/MCY/products/3/optimized/15257733_fpx.tif?wid=300&fmt=jpeg&qlt=100",
+        "https://i5.walmartimages.com/asr/acd51601-0a70-47be-bd74-11ed67489144_1.1eb556793a225398eb779f556c2dfe5f.jpeg?odnHeight=450&odnWidth=450&odnBg=ffffff",
+        "http://site.unbeatablesale.com/BRKV012.JPG",
+        "https://tshop.r10s.com/c86/c82/9465/57f1/60cb/fc61/d72f/113fe9839c0242ac110002.jpg?_ex=512x512",
+        "https://jetimages.jetcdn.net/md5/9df07f10c210df6681dc50beb43f9916.500"
+      ],
+      "offers": [
+        {
+          "merchant": "UnbeatableSale.com",
+          "domain": "unbeatablesale.com",
+          "title": "CHG-TH-2P 4 x 8 in. Stylish Stainless Steel Taco Holder Stand - Pack of 2",
+          "currency": "",
+          "list_price": 14.63,
+          "price": 11.25,
+          "shipping": "US:::6.68 USD",
+          "condition": "New",
+          "availability": "",
+          "link": "https://www.upcitemdb.com/norob/alink/?id=y2q213x20343a494y2&tid=1&seq=1683902940&plt=13122a5621e746b05ad9383482a0197c",
+          "updated_t": 1584613494
+        },
+        {
+          "merchant": "Rakuten(Buy.com)",
+          "domain": "rakuten.com",
+          "title": "2 Pack - Stylish Stainless Steel Taco Holder Stand, Taco Truck Tray Style, Rack Holds Up to 3 Tacos Each, Oven Safe for Baking, Dishwasher and Grill Safe, 4\" x 8\", by California Home Goods",
+          "currency": "",
+          "list_price": "",
+          "price": 8.99,
+          "shipping": "",
+          "condition": "New",
+          "availability": "",
+          "link": "https://www.upcitemdb.com/norob/alink/?id=y2q26303131374b4v2&tid=1&seq=1683902940&plt=aca3dff552d3d53c8692cfbff27275fc",
+          "updated_t": 1593185324
+        },
+        {
+          "merchant": "Macy's",
+          "domain": "macys.com",
+          "title": "California Home Goods Stylish Stainless Steel Taco Holder Stand - Pack of 2",
+          "currency": "",
+          "list_price": 16,
+          "price": 10.99,
+          "shipping": "10.95",
+          "condition": "New",
+          "availability": "",
+          "link": "https://www.upcitemdb.com/norob/alink/?id=x2u23303v223a444x2&tid=1&seq=1683902940&plt=95d12ffbc0eb6ca8e502c329f2220267",
+          "updated_t": 1597675272
+        },
+        {
+          "merchant": "Wal-Mart.com",
+          "domain": "walmart.com",
+          "title": "California Home Goods Stainless Taco Holders Stand  2-Pack  3 Tacos Each",
+          "currency": "",
+          "list_price": "",
+          "price": 12.99,
+          "shipping": "Free Shipping",
+          "condition": "New",
+          "availability": "Out of Stock",
+          "link": "https://www.upcitemdb.com/norob/alink/?id=03t263134343c474x2&tid=1&seq=1683902940&plt=4d42774fb51110053df5d6f9a5cce07a",
+          "updated_t": 1666655566
+        },
+        {
+          "merchant": "Walmart Marketplace",
+          "domain": "walmart.com",
+          "title": "2 Pack - Stylish Stainless Steel Taco Holder Stand, Taco Truck Tray Style, Rack Holds Up to 3 Tacos Each, Oven Safe for Baking, Dishwasher and Grill Safe, 4\" x 8�",
+          "currency": "",
+          "list_price": "",
+          "price": 16.95,
+          "shipping": "0",
+          "condition": "New",
+          "availability": "",
+          "link": "https://www.upcitemdb.com/norob/alink/?id=w2p233u2x20384b4s2&tid=1&seq=1683902940&plt=703b2be68ba92d3889ca8274c7539011",
+          "updated_t": 1543033616
+        },
+        {
+          "merchant": "Jet.com",
+          "domain": "jet.com",
+          "title": "Stylish Stainless Steel Taco Holder Stand, Taco Truck Tray Style, Rack Holds Up to 3 Tacos Each, Oven Safe for Baking, Dishwasher and Grill Safe, 4\" x 8\", by California Home Goods (4 Pack)",
+          "currency": "",
+          "list_price": "",
+          "price": 16.95,
+          "shipping": "",
+          "condition": "New",
+          "availability": "",
+          "link": "https://www.upcitemdb.com/norob/alink/?id=w2s243y23343e494q2&tid=1&seq=1683902940&plt=bd7f2a068716a87c00c19a219c62c491",
+          "updated_t": 1561999730
+        }
+      ],
+      "elid": "273639937294"
+    }
+  ]
+}

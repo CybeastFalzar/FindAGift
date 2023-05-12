@@ -1,15 +1,35 @@
 {% extends "base.html" %}
-{% block title %}Home Page{% endblock %}
-{% block content %}
-<h1>Results</h1>
-        {% for result in content %}
-            <p>{{result.seller}}</p>
-            <p>{{result.name}}</p>
-            <p>{{result.price}}</p>
-            <a href="{{result.buy_link}}" target="_blank">
-                <img src = "{{result.img_link}}" alt="pringles" width=10% length = 100px>
-            </a>
-            <br>
-            
-        {% endfor %}
+{% block head %}
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static', filename='result.css') }}">
 {% endblock %}
+{% block title %}Results{% endblock %}
+{% block content %}
+
+<div class="page">
+
+    <h1 class="title">Results</h1>
+        <div class="gift-container">
+            {% for result in content %}
+                <div class="display-gift">
+                    <div class="gift-header">
+                        <div class="gift-seller">
+                            <p>{{result.seller}}</p>
+                        </div>
+                        <div class="gift-name">
+                            <p>{{result.name}}</p>
+                        </div>
+                        <div class="gift-price">
+                            <p>${{ "%.2f"|format(result.price) }}</p>
+                        </div>
+                    </div>
+                    <div class="gift-img">
+                        <a href="{{result.buy_link}}" target="_blank">
+                            <img src="{{result.img_link}}" alt="pringles">
+                        </a>
+                    </div>
+                </div>
+                <br>
+            {% endfor %}
+        </div> 
+    {% endblock %}
+</div>

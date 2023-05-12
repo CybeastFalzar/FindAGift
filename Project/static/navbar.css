@@ -1,0 +1,33 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a.navbar-brand p {
+    color: orangered;
+    font-weight: bolder;
+    font-size: 36px;
+    /* padding-top: 10px; */
+    
+}
+
+.nav-item {
+
+    padding-left: 50px;
+    /* padding-top: 20px; */
+   
+}
+/* colors from https://colorbrewer2.org/#type=diverging&scheme=RdGy&n=4 */
+
+.narbar-text {
+    
+    color: #404040;
+    font-size: 24px;
+}
+a {
+   font-weight: bold;
+}
+
+.narbar {
+    background: #bababa; 
+    height: 5em;
+}

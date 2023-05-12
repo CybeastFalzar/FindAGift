@@ -1,0 +1,43 @@
+{
+    "code": "OK",
+    "total": 1,
+    "offset": 0,
+    "items": [
+        {
+            "ean": "0072156664238",
+            "title": "Boorum & Pease Record/Account Book  Journal Rule  Blue  300 Pages  12 1/8 x 7 5/8",
+            "description": "Keep records in timeless style with the Boorum & Pease Record Account Book. Its numbered pages  table of contents and an integrated ribbon ensure easy navigation. Sewn-in sheets prevent loose pages and show evidence of tampering. The Smyth-sewn construction lies flat to let you read from margin to margin  and premium  acid-free paper offers an exceptional way to preserve information. This Boorum & Pease journal features 33 lines per page  no units  a table of contents page and a blue canvas cover. Its red and blue journal rulings are waterproof and permanent.",
+            "upc": "072156664238",
+            "brand": "Boorum & Pease",
+            "model": "66-300-J",
+            "color": "Black",
+            "size": "",
+            "dimension": "",
+            "weight": "1.00 lbs",
+            "category": "Luggage & Bags",
+            "currency": "CAD",
+            "lowest_recorded_price": 13.56,
+            "highest_recorded_price": 2435,
+            "images": [
+                "https://i5.walmartimages.com/asr/0f1b7f24-837b-40f0-bf65-970393051812_1.72af920c80dcabcdaadcbb83a8aec940.jpeg?odnHeight=450&odnWidth=450&odnBg=ffffff"
+            ],
+            "offers": [
+                {
+                    "merchant": "Wal-Mart.com",
+                    "domain": "walmart.com",
+                    "title": "Boorum & Pease Record/Account Book  Journal Rule  Blue  300 Pages  12 1/8 x 7 5/8",
+                    "currency": "",
+                    "list_price": 50.49,
+                    "price": 26.95,
+                    "shipping": "Free Shipping",
+                    "condition": "New",
+                    "availability": "",
+                    "link": "https://www.upcitemdb.com/norob/alink/?id=y2s203y2x253a4a4&tid=1&seq=1683854869&plt=dbc51cf2da03440786afc4f779451e4b",
+                    "updated_t": 1682922962
+                }
+            ],
+            "asin": "B00006IBTT",
+            "elid": "234890384052"
+        }
+    ]
+}

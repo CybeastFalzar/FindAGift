@@ -30,6 +30,21 @@ test_item_2 = filter_data("pringles.json")
 def create_tables():
    load_gifts.init_db()
    
+@app.route("/")
+def default():
+     return redirect(url_for("find"))
+
+@app.route("/home")
+def home():
+    return render_template("home.html")
+
+@app.route("/loading")
+def loading():
+    return render_template("loading.html")
+
+@app.route("/about")
+def about():
+    return render_template("about.html")
 
 @app.route("/result")
 def result():
@@ -65,7 +80,7 @@ def find():
             rand_gift = random.sample(range(1, len(temp_result)+1), chosen_number_gifts)
             for id in rand_gift:
                 result_item.append(temp_result[id-1])
-            return redirect(url_for("result"))
+            return redirect(url_for("loading"))
         
         elif 'submit-random' in request.form:
             all_gifts = load_gifts.gifts.query.all()
@@ -76,8 +91,11 @@ def find():
             for id in rand_gift_id:
                 rand_result = load_gifts.gifts.query.filter_by(_id=id).all()
                 result_item.append(rand_result[0])
-                    
-            return redirect(url_for("result"))
+
+
+            # for gift in all_gifts:
+            #     result_item.append(gift)        
+            return redirect(url_for("loading"))
     else:
         result_item.clear()
         return render_template("index.html") 

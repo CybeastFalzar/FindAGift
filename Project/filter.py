@@ -74,3 +74,12 @@ def filter_data_api(api_link):
         result["img_link"] = data['items'][0]['images'][0]
     return result
 
+# baseball_bucket_4
+
+
+def get_category(filename):
+    remove_json = str(filename).split(".")
+    result = str(remove_json[0]).split("_")
+    return result[0].lower()
+
+
