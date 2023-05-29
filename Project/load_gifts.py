@@ -2,14 +2,15 @@ from app import db
 from filter import filter_data, filter_data_api, get_category
 import os
 
+__tablename__ = 'gifts'
 class gifts(db.Model):
     _id = db.Column("id", db.Integer, primary_key=True)
-    category = db.Column(db.String(100))
-    name = db.Column(db.String(100))
-    seller = db.Column(db.String(100))
+    category = db.Column(db.String(300))
+    name = db.Column(db.String(300))
+    seller = db.Column(db.String(300))
     price = db.Column(db.Float)
-    buy_link = db.Column(db.String(100))
-    img_link = db.Column(db.String(100))
+    buy_link = db.Column(db.String(300))
+    img_link = db.Column(db.String(300))
     age = db.Column(db.Integer)
 
     def __init__(self, result, category, age):

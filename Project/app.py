@@ -5,10 +5,11 @@ import load_gifts
 import random
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///gift.sqlite3'
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///gift.sqlite3'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://findagift_user:JGigsy7lWUJqGJ8ALaI1LMK2Jqur7xAa@dpg-chq0uvu7avjb90k7f3c0-a.oregon-postgres.render.com/findagift'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = -1
-
+# postgres://findagift_user:JGigsy7lWUJqGJ8ALaI1LMK2Jqur7xAa@dpg-chq0uvu7avjb90k7f3c0-a.oregon-postgres.render.com/findagift
 db = SQLAlchemy(app)
 
 
