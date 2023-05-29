@@ -1,4 +1,3 @@
-import pandas as pd 
 from statistics import median
 import json
 import requests
