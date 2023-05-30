@@ -31,34 +31,34 @@ class gifts(db.Model):
     #     self.age = age
 
 def init_db():
-    db.drop_all()
-    db.create_all()
+    # db.drop_all()
+    # db.create_all()
 
-    directory = "gifts"
-    for filename in os.listdir(directory):
-        f = os.path.join(directory, filename)
-        if os.path.isfile(f):
-            age = 0
-            cond1 = get_category(str(filename)) == "nickelodeon"
-            cond2 = get_category(str(filename)) == "basketball"
-            cond3 = get_category(str(filename)) == "baseball"
-            cond4 = get_category(str(filename)) == "star wars"
-            cond5 = get_category(str(filename)) == "graphic tees"
-            if (cond1):
-                age = 3
-            elif cond2:
-                age = 4
-            elif cond3:
-                age = 4
-            elif cond4:
-                age = 2
-            elif cond5:
-                age = 4
-            else:
-                age = 4
-            new_entry = gifts(filter_data(f), get_category(str(filename)), age)
-            db.session.add(new_entry)
-    db.session.commit()
+    # directory = "gifts"
+    # for filename in os.listdir(directory):
+    #     f = os.path.join(directory, filename)
+    #     if os.path.isfile(f):
+    #         age = 0
+    #         cond1 = get_category(str(filename)) == "nickelodeon"
+    #         cond2 = get_category(str(filename)) == "basketball"
+    #         cond3 = get_category(str(filename)) == "baseball"
+    #         cond4 = get_category(str(filename)) == "star wars"
+    #         cond5 = get_category(str(filename)) == "graphic tees"
+    #         if (cond1):
+    #             age = 3
+    #         elif cond2:
+    #             age = 4
+    #         elif cond3:
+    #             age = 4
+    #         elif cond4:
+    #             age = 2
+    #         elif cond5:
+    #             age = 4
+    #         else:
+    #             age = 4
+    #         new_entry = gifts(filter_data(f), get_category(str(filename)), age)
+    #         db.session.add(new_entry)
+    # db.session.commit()
 
 
 if __name__ == '__main__':
