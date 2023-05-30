@@ -31,9 +31,9 @@ test_item_2 = filter_data("pringles.json")
 
 # ex 13
 
-@app.before_first_request
-def create_tables():
-   load_gifts.init_db()
+# @app.before_first_request
+# def create_tables():
+#    load_gifts.init_db()
    
 @app.route("/")
 def default():
