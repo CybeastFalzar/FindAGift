@@ -1,8 +1,7 @@
-from app import db
+from database import db
 from filter import filter_data, filter_data_api, get_category
 import os
 
-__tablename__ = 'gifts'
 class gifts(db.Model):
     _id = db.Column("id", db.Integer, primary_key=True)
     category = db.Column(db.String(300))

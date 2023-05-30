@@ -1,6 +1,7 @@
 from flask import Flask, redirect, url_for, render_template, request
 from filter import filter_data
 from flask_sqlalchemy import SQLAlchemy
+import database
 import load_gifts
 import random
 
@@ -10,9 +11,13 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://findagift_user:JGigsy7lWUJ
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = -1
 # postgres://findagift_user:JGigsy7lWUJqGJ8ALaI1LMK2Jqur7xAa@dpg-chq0uvu7avjb90k7f3c0-a.oregon-postgres.render.com/findagift
-db = SQLAlchemy(app)
 
+# def create_db(app):
+    
+#     return db
+# db = create_db(app)
 
+database.db.init_app(app)
 
 result_item = []
 # age_lookup = [12, 17, 30, 100]
