@@ -2,7 +2,6 @@ from flask import Flask, redirect, url_for, render_template, request
 from filter import filter_data
 from flask_sqlalchemy import SQLAlchemy
 import database
-import load_gifts
 import random
 
 app = Flask(__name__)
@@ -18,7 +17,7 @@ app.config['SEND_FILE_MAX_AGE_DEFAULT'] = -1
 # db = create_db(app)
 
 database.db.init_app(app)
-
+import load_gifts
 result_item = []
 # age_lookup = [12, 17, 30, 100]
 # 12 - 0-12
