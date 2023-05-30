@@ -31,6 +31,7 @@ class gifts(db.Model):
     #     self.age = age
 
 def init_db():
+    print(1)
     # db.drop_all()
     # db.create_all()
 
