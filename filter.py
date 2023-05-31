@@ -7,7 +7,7 @@ def filter_data(file_name):
     with open(file_name) as f:
         data = json.load(f) 
 
-    print(type(data))
+    
     result = {}
     num_dict = {}
     num_list = []
