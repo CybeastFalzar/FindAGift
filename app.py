@@ -16,6 +16,7 @@ app.config['SEND_FILE_MAX_AGE_DEFAULT'] = -1
 #     return db
 # db = create_db(app)
 
+
 database.db.init_app(app)
 import load_gifts
 result_item = []
@@ -47,6 +48,14 @@ def home():
 def loading():
     return render_template("loading.html")
 
+@app.route("/loadingempty")
+def loadingempty():
+    return render_template("loadingempty.html")
+
+@app.route("/loadinghome")
+def loadinghome():
+    return render_template("loadinghome.html")
+
 @app.route("/about")
 def about():
     return render_template("about.html")
@@ -54,6 +63,10 @@ def about():
 @app.route("/result")
 def result():
     return render_template("results.html", content=result_item)
+
+@app.route("/noresult")
+def noresult():
+    return render_template("noresult.html")
 
 @app.route("/find", methods=["POST", "GET"])
 def find():
@@ -85,26 +98,36 @@ def find():
             rand_gift = random.sample(range(1, len(temp_result)+1), chosen_number_gifts)
             for id in rand_gift:
                 result_item.append(temp_result[id-1])
-            return redirect(url_for("loading"))
+            if (len(result_item) == 0):
+                return redirect(url_for("loadingempty"))
+            else:     
+                return redirect(url_for("loading"))
         
         elif 'submit-random' in request.form:
-            all_gifts = load_gifts.gifts.query.all()
+            all_gifts = load_gifts.gifts.query.all()  
             rand_num = int(request.form['num_of_gifts_rand'])
+            chosen_budget = request.form['budget-rand']
+            budget_num = chosen_budget.split(",")
+            budget_num = [float(i) for i in budget_num]
             if (rand_num >= len(all_gifts)+1):
                 rand_num = len(all_gifts)
             rand_gift_id = random.sample(range(1, len(all_gifts)+1), rand_num)
             for id in rand_gift_id:
                 rand_result = load_gifts.gifts.query.filter_by(_id=id).all()
-                result_item.append(rand_result[0])
+                price_cond1 = rand_result[0].price >= budget_num[0]
+                price_cond2 = rand_result[0].price <= budget_num[1]
+                if (price_cond1 and price_cond2):
+                    result_item.append(rand_result[0])
 
-
-            # for gift in all_gifts:
-            #     result_item.append(gift)        
-            return redirect(url_for("loading"))
+            if (len(result_item) == 0):
+                return redirect(url_for("loadingempty"))
+            else:     
+                return redirect(url_for("loading"))
     else:
         result_item.clear()
         return render_template("index.html") 
 
 if __name__ == "__main__":
 #    db.create_all()
-    app.run(debug=False)
+    app.run(debug=True)
+    #app.run(debug=False)
