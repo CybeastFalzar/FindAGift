@@ -106,18 +106,18 @@ def find():
         elif 'submit-random' in request.form:
             all_gifts = load_gifts.gifts.query.all()  
             rand_num = int(request.form['num_of_gifts_rand'])
-            chosen_budget = request.form['budget-rand']
-            budget_num = chosen_budget.split(",")
-            budget_num = [float(i) for i in budget_num]
+            # chosen_budget = request.form['budget-rand']
+            # budget_num = chosen_budget.split(",")
+            # budget_num = [float(i) for i in budget_num]
             if (rand_num >= len(all_gifts)+1):
                 rand_num = len(all_gifts)
             rand_gift_id = random.sample(range(1, len(all_gifts)+1), rand_num)
             for id in rand_gift_id:
                 rand_result = load_gifts.gifts.query.filter_by(_id=id).all()
-                price_cond1 = rand_result[0].price >= budget_num[0]
-                price_cond2 = rand_result[0].price <= budget_num[1]
-                if (price_cond1 and price_cond2):
-                    result_item.append(rand_result[0])
+                # price_cond1 = rand_result[0].price >= budget_num[0]
+                # price_cond2 = rand_result[0].price <= budget_num[1]
+                # if (price_cond1 and price_cond2):
+                result_item.append(rand_result[0])
 
             if (len(result_item) == 0):
                 return redirect(url_for("loadingempty"))
